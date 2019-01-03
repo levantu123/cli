@@ -1,0 +1,9 @@
+.searchList
+    input#searchInput((keyup)="updateListSearch($event)" placeholder="Search for words..")
+    app-search-list([data]="searchData")
+.wordData
+    h2 {{ currentData.baseText }}
+    div(*ngFor="let item of currentData.descriptions")
+        p
+            i {{ item.wordType }}
+        p.para {{ item.content }}

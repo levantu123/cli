@@ -1,0 +1,9 @@
+{
+  "/words": {
+    "target": "http://localhost:8080/words",
+    "secure": false,
+    "pathRewrite": {
+      "^/words": ""
+    }
+  }
+}
